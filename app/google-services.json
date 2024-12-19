@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "449570280813",
+    "project_id": "tribex-d88bd",
+    "storage_bucket": "tribex-d88bd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449570280813:android:ca028f5ab435fc32a9b664",
+        "android_client_info": {
+          "package_name": "com.creativeitinstitute.tribex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArfUhIA1BGzbQXgJysUfmQ1tI3-Td6n-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
