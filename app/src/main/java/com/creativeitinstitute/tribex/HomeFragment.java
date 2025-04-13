@@ -161,46 +161,5 @@ public class HomeFragment extends Fragment {
 
         return super.onOptionsItemSelected(item);
     }
-   @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); 
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu); // "Hamburger" icon
-
-        drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
-
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
-                
-                int id = menuItem.getItemId();
-                if (id == R.id.nav_home) {
-                   
-                } else if (id == R.id.nav_contact) {
-                    
-                } 
-                 drawerLayout.closeDrawer(navigationView); 
-                return true;
-            }
-        });
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            drawerLayout.openDrawer(navigationView);
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-
-
-
-    
 
 }
