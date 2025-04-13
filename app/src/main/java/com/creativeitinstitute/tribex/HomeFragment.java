@@ -164,8 +164,7 @@ public class HomeFragment extends Fragment {
    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // Your main layout
-
+        setContentView(R.layout.activity_main); 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -177,15 +176,14 @@ public class HomeFragment extends Fragment {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
-                // Handle menu item clicks here (e.g., using a switch statement)
+                
                 int id = menuItem.getItemId();
                 if (id == R.id.nav_home) {
-                    // ...  Action for "home"
+                   
                 } else if (id == R.id.nav_contact) {
-                    // ... Action for "contact"
-                } // ... and so on
-
-                drawerLayout.closeDrawer(navigationView); // Close the drawer after selection
+                    
+                } 
+                 drawerLayout.closeDrawer(navigationView); 
                 return true;
             }
         });
